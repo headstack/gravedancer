@@ -76,7 +76,7 @@ MariaDB [(none)]>
 
 ## The logic of the script
 
-![Gravedancer working schema](#https://github.com/headstack/gravedancer/blob/main/gravedancer_schema.svg)
+![Gravedancer working schema](gravedancer_schema.svg)
 
 ### Description of the pre-collection and post-processing process **(gold lines)**.
 
