@@ -71,7 +71,7 @@ MariaDB [(none)]>
 
 > **ATTENTION!** The *variable* containing the logical names of the target hosts must contain the values in logical order with the `$VIP` *variable*. For example, in the `$VIP` *variable* you have specified the following array `(“10.1.1.1” “10.1.1.2”)`, in the `$REG` *variable* you have specified an array `(“REG1” “REG2”)`. This is important for the correct formation of logs and avoid confusion.
 
-10. In the `#Log params` section, specify a boolean value for the `$MBHOST` *variable*, for example 'pd-09-backup-host', and for `$MBSIP` - the IP address of the *backup* server. Variables are used for logging and for substitution in the command to send a verified *backup* to the Master-Backup-Server.
+10. In the `#Log params` section, specify a boolean value for the `$MBHOST` *variable*, for example 'srv-01-bkp-host', and for `$MBSIP` - the IP address of the *backup* server. Variables are used for logging and for substitution in the command to send a verified *backup* to the Master-Backup-Server.
 11. In the `#Maintenance params` -> `#For directories older then NDAY` section, specify an integer value for the `$NDAY` *variable*, for example 3. This means that you want to clean up directories with logs and hot *backups* that are older than 3 days. The directories in which the files were located are also deleted.
 
 ## The logic of the script
